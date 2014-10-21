@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "http_code": 200
+  },
+  "data": {
+    "id": 8,
+    "url": "https:\/\/stagebloc.dev\/user\/testuser",
+    "created": "2009-10-27 14:29:16",
+    "name": "Test User",
+    "username": "testuser",
+    "bio": "Biography here...",
+    "color": "70,170,255",
+    "birthday": "1995-07-05",
+    "gender": "male",
+    "email": "testuser@sb.com",
+    "photo": {
+      "width": 525,
+      "height": 500,
+      "images": {
+        "thumbnail_url": "thumbnail-photo-url",
+        "small_url": "small-photo-url",
+        "medium_url": "medium-photo-url",
+        "large_url": "large-photo-url",
+        "original_url": "original-photo-url"
+      }
+    }
+  }
+}

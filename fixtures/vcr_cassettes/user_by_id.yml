@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stagebloc.com/v1/users/402218?client_id=<STAGEBLOC_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Oct 2014 16:54:29 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.4.33-2+deb.sury.org~precise+1
+      Set-Cookie:
+      - PHPSESSID=a5vqr2879j3vil6ogpbe8cl2e7; path=/; domain=api.stagebloc.com
+      Cache-Control:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "{\"metadata\":{\"http_code\":200},\"data\":{\"id\":402218,\"url\":\"https:\\/\\/stagebloc.com\\/user\\/baylorrae\",\"created\":\"2014-07-15
+        21:36:16\",\"name\":\"Baylor Rae\\u0027\",\"username\":\"baylorrae\",\"bio\":\"\",\"color\":\"70,170,255\"}}"
+    http_version: 
+  recorded_at: Tue, 21 Oct 2014 16:54:29 GMT
+recorded_with: VCR 2.9.3
