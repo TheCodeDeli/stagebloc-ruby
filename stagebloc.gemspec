@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "cucumber", "~> 1.3"
   spec.add_development_dependency "webmock", "~> 1.19"
   spec.add_development_dependency "vcr", "~> 2.9"
+  spec.add_development_dependency "coveralls", "~> 0.7"
 end
