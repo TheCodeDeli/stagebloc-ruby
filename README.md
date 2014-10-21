@@ -24,9 +24,35 @@ Or install it yourself as:
 
     $ gem install stagebloc
 
+## Configure
+
+Before using this wrapper you'll need to add your `client id` and
+`client secret` from Stagebloc. You can learn how to obtain these in this
+document. <https://stagebloc.com/developers/api/v1/general-information>
+
+```ruby
+StageBloc.configure do |c|
+  c.client_id = ENV.fetch('STAGEBLOC_CLIENT_ID')
+  c.client_secret = ENV.fetch('STAGEBLOC_CLIENT_SECRET')
+end
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+The StageBloc wrapper is designed to work like ActiveRecord.
+
+```ruby
+user = StageBloc::User.find(123)
+user.name #=> "Test User"
+```
+
+The following endpoints have been created.
+
+- [Users#find][find_user]
+
+## Todo
+
+- [ ] replace custom REST adapter with ActiveResource
 
 ## Contributing
 
@@ -37,3 +63,4 @@ TODO: Write usage instructions here
 5. Create a new Pull Request
 
 [omniauth-stagebloc]: https://github.com/TheCodeDeli/omniauth-stagebloc
+[find_user]: http://www.thecodedeli.com/stagebloc-ruby/classes/StageBloc/User.html
