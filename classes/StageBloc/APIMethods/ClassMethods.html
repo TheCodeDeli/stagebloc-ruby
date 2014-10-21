@@ -99,7 +99,15 @@
           
           
             <div class="description">
-              
+              <p>Defines getter methods for a attributes.</p>
+
+<pre><code>class SomeEndpoint &lt; Struct.new(:attributes)
+  include StageBloc::APIMethods
+
+  has_attributes :first_name, :last_name
+  has_attribute :age
+end
+</code></pre>
             </div>
           
           
@@ -119,11 +127,11 @@
                 Source: 
                 <a href="javascript:toggleSource('method-i-has_attribute_source')" id="l_method-i-has_attribute_source">show</a>
                 
-                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/67954ee2796fce823bcb9fd8a3345dd5216abd2d/lib/stagebloc/api_methods.rb#L9" target="_blank" class="github_url">on GitHub</a>
+                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/98fc9b4c07ddbb57dc4f86529f7ec90c3aa0298b/lib/stagebloc/api_methods.rb#L30" target="_blank" class="github_url">on GitHub</a>
                 
               </p>
               <div id="method-i-has_attribute_source" class="dyn-source">
-                <pre><span class="ruby-comment"># File lib/stagebloc/api_methods.rb, line 9</span>
+                <pre><span class="ruby-comment"># File lib/stagebloc/api_methods.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">has_attribute</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">keys</span>)
   <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
     <span class="ruby-identifier">class_eval</span> <span class="ruby-node">%Q{

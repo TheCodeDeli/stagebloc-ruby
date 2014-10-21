@@ -42,6 +42,14 @@
     <div id="bodyContent">
         <div id="content">
   
+    <div class="description">
+      
+<h2 id="module-StageBloc-label-StageBloc"><a href="StageBloc.html">StageBloc</a></h2>
+
+<p>A Ruby API Client for <a href="https://stagebloc.com">stagebloc.com</a></p>
+
+    </div>
+  
 
 
   
@@ -59,11 +67,6 @@
         <li>
           <span class="type">MODULE</span>
           <a href="StageBloc/APIMethods.html">StageBloc::APIMethods</a>
-        </li>
-      
-        <li>
-          <span class="type">CLASS</span>
-          <a href="StageBloc/API.html">StageBloc::API</a>
         </li>
       
         <li>
@@ -153,7 +156,8 @@
           
           
             <div class="description">
-              
+              <p>Returns an instance of <a
+href="StageBloc/Configuration.html">StageBloc::Configuration</a></p>
             </div>
           
           
@@ -169,11 +173,11 @@
                 Source: 
                 <a href="javascript:toggleSource('method-c-configuration_source')" id="l_method-c-configuration_source">show</a>
                 
-                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/67954ee2796fce823bcb9fd8a3345dd5216abd2d/lib/stagebloc/configuration.rb#L9" target="_blank" class="github_url">on GitHub</a>
+                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/67954ee2796fce823bcb9fd8a3345dd5216abd2d/lib/stagebloc/configuration.rb#L16" target="_blank" class="github_url">on GitHub</a>
                 
               </p>
               <div id="method-c-configuration_source" class="dyn-source">
-                <pre><span class="ruby-comment"># File lib/stagebloc/configuration.rb, line 9</span>
+                <pre><span class="ruby-comment"># File lib/stagebloc/configuration.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">self</span>.<span class="ruby-identifier">configuration</span>
   <span class="ruby-ivar">@configuration</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Configuration</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -192,7 +196,13 @@
           
           
             <div class="description">
-              
+              <p>Set configuration options for API requests.</p>
+
+<pre><code>StageBloc.configure do |c|
+  c.client_id = ENV.fetch(&#39;STAGEBLOC_CLIENT_ID&#39;)
+  c.client_secret = ENV.fetch(&#39;STAGEBLOC_CLIENT_SECRET&#39;)
+end
+</code></pre>
             </div>
           
           
@@ -208,11 +218,11 @@
                 Source: 
                 <a href="javascript:toggleSource('method-c-configure_source')" id="l_method-c-configure_source">show</a>
                 
-                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/67954ee2796fce823bcb9fd8a3345dd5216abd2d/lib/stagebloc/configuration.rb#L2" target="_blank" class="github_url">on GitHub</a>
+                  | <a href="https://github.com/TheCodeDeli/stagebloc-ruby/blob/67954ee2796fce823bcb9fd8a3345dd5216abd2d/lib/stagebloc/configuration.rb#L8" target="_blank" class="github_url">on GitHub</a>
                 
               </p>
               <div id="method-c-configure_source" class="dyn-source">
-                <pre><span class="ruby-comment"># File lib/stagebloc/configuration.rb, line 2</span>
+                <pre><span class="ruby-comment"># File lib/stagebloc/configuration.rb, line 8</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">self</span>.<span class="ruby-identifier">configure</span>
   <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">configuration</span>)
 
