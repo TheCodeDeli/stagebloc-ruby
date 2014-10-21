@@ -6,7 +6,7 @@ RDoc::Task.new('docs') do |rdoc|
   rdoc.options << '--format' << 'sdoc'
   rdoc.options << '--github'
 
-  rdoc.rdoc_dir = 'doc'
+  rdoc.rdoc_dir = 'pages'
   rdoc.rdoc_files.include('lib/**/*.rb', 'README.md')
   rdoc.main = 'README.md'
 end
