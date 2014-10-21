@@ -23,7 +23,7 @@
         </h1>
         <ul class="files">
             <li>README.md</li>
-            <li>Last modified: 2014-10-21 13:45:54 -0500</li>
+            <li>Last modified: 2014-10-21 14:23:46 -0500</li>
         </ul>
     </div>
 
@@ -62,9 +62,38 @@ for Stagebloc</a>.</p>
 
 <pre><code>$ gem install stagebloc</code></pre>
 
+<h2 id="label-Configure">Configure</h2>
+
+<p>Before using this wrapper you&#39;ll need to add your <code>client
+id</code> and <code>client secret</code> from Stagebloc. You can learn how
+to obtain these in this document. <a
+href="https://stagebloc.com/developers/api/v1/general-information">stagebloc.com/developers/api/v1/general-information</a></p>
+
+<pre><code>StageBloc.configure do |c|
+  c.client_id = ENV.fetch(&#39;STAGEBLOC_CLIENT_ID&#39;)
+  c.client_secret = ENV.fetch(&#39;STAGEBLOC_CLIENT_SECRET&#39;)
+end
+</code></pre>
+
 <h2 id="label-Usage">Usage</h2>
 
-<p>TODO: Write usage instructions here</p>
+<p>The <a href="../classes/StageBloc.html">StageBloc</a> wrapper is designed
+to work like ActiveRecord.</p>
+
+<pre><code>user = StageBloc::User.find(123)
+user.name #=&gt; &quot;Test User&quot;
+</code></pre>
+
+<p>The following endpoints have been created.</p>
+<ul><li>
+<p><a
+href="http://www.thecodedeli.com/stagebloc-ruby/classes/StageBloc/User.html">Users#find</a></p>
+</li></ul>
+
+<h2 id="label-Todo">Todo</h2>
+<ul><li>
+<p>[ ] replace custom REST adapter with ActiveResource</p>
+</li></ul>
 
 <h2 id="label-Contributing">Contributing</h2>
 <ol><li>
