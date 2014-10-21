@@ -11,7 +11,9 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.rspec_opts = %w[--format progress]
 end
 
-Cucumber::Rake::Task.new
+Cucumber::Rake::Task.new do |t|
+  t.cucumber_opts = "--format progress"
+end
 
 RDoc::Task.new('docs') do |rdoc|
   rdoc.title = 'StageBloc API'
