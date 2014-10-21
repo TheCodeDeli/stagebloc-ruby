@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>StageBloc::User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/github.css" type="text/css" media="screen" />
+<script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>     
+    <div class="banner">
+        
+        <h1>
+            <span class="type">Class</span> 
+            StageBloc::User 
+            
+                <span class="parent">&lt; 
+                    
+                    Object
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/stagebloc/user_rb.html">lib/stagebloc/user.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<h2 id="class-StageBloc::User-label-StageBloc%3A%3AUser"><a href="User.html">StageBloc::User</a></h2>
+
+<p>Wraps the users endpoint in the <a href="../StageBloc.html">StageBloc</a>
+<a href="API.html">API</a>. <a
+href="https://stagebloc.com/developers/api/v1/users">stagebloc.com/developers/api/v1/users</a></p>
+
+<pre><code>user = StageBloc::User.find(&#39;user-id&#39;)
+user.name #=&gt; &quot;Test User&quot;
+</code></pre>
+
+<h3 id="class-StageBloc::User-label-Available+Methods">Available Methods</h3>
+<ul><li>
+<p>id</p>
+</li><li>
+<p>url</p>
+</li><li>
+<p>name</p>
+</li><li>
+<p>username</p>
+</li><li>
+<p>bio</p>
+</li><li>
+<p>color</p>
+</li><li>
+<p>gender</p>
+</li><li>
+<p>email</p>
+</li><li>
+<p>created</p>
+</li><li>
+<p>birthday</p>
+</li><li>
+<p>photo</p>
+</li></ul>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+    <!-- Method ref -->
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+      
+        <dt>B</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-i-birthday">birthday</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+        <dt>C</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-i-created">created</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+        <dt>F</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-c-find">find</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+        <dt>N</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-c-new">new</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+        <dt>P</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-i-photo">photo</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+    </dl>
+  
+
+  
+    <!-- Includes -->
+    <div class="sectiontitle">Included Modules</div>
+    <ul>
+      
+        <li>
+          
+            <a href="APIMethods.html">
+              StageBloc::APIMethods
+            </a>
+          
+        </li>
+      
+    </ul>
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+      <!-- Section attributes -->
+      <div class="sectiontitle">Attributes</div>
+      <table border='0' cellpadding='5'>
+        
+          <tr valign='top'>
+            <td class='attr-rw'>
+              [R]
+            </td>
+            <td class='attr-name'>attributes</td>
+            <td class='attr-desc'></td>
+          </tr>
+        
+      </table>
+    
+
+
+    <!-- Methods -->
+    
+      <div class="sectiontitle">Class Public methods</div>
+      
+        <div class="method">
+          <div class="title method-title" id="method-c-find">
+            
+              <b>find</b>(user_id)
+            
+            <a href="../../classes/StageBloc/User.html#method-c-find" name="method-c-find" class="permalink">Link</a>
+          </div>
+          
+          
+            <div class="description">
+              <p>Finds a <a href="../StageBloc.html">StageBloc</a> user by ID. Returns an
+instance of <a href="User.html">StageBloc::User</a></p>
+
+<pre><code>user = StageBloc::User.find(&#39;user-id&#39;)
+user.name #=&gt; &quot;Test User&quot;
+</code></pre>
+            </div>
+          
+          
+          
+
+          
+          
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source: 
+                <a href="javascript:toggleSource('method-c-find_source')" id="l_method-c-find_source">show</a>
+                
+              </p>
+              <div id="method-c-find_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File lib/stagebloc/user.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">user_id</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-constant">API</span>.<span class="ruby-identifier">get</span>(<span class="ruby-node">&quot;/users/#{user_id}&quot;</span>)
+  <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">parsed_response</span>[<span class="ruby-string">&#39;data&#39;</span>])
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+        
+        <div class="method">
+          <div class="title method-title" id="method-c-new">
+            
+              <b>new</b>(user_hash)
+            
+            <a href="../../classes/StageBloc/User.html#method-c-new" name="method-c-new" class="permalink">Link</a>
+          </div>
+          
+          
+            <div class="description">
+              <p>Accepts user attributes as a Hash.</p>
+
+<pre><code>user = StageBloc::User.new({ id: &#39;user-id&#39; })
+user.id #=&gt; &quot;user-id&quot;
+</code></pre>
+            </div>
+          
+          
+          
+
+          
+          
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source: 
+                <a href="javascript:toggleSource('method-c-new_source')" id="l_method-c-new_source">show</a>
+                
+              </p>
+              <div id="method-c-new_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File lib/stagebloc/user.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">initialize</span>(<span class="ruby-identifier">user_hash</span>)
+  <span class="ruby-ivar">@attributes</span> = <span class="ruby-identifier">user_hash</span>
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+                  
+      <div class="sectiontitle">Instance Public methods</div>
+      
+        <div class="method">
+          <div class="title method-title" id="method-i-birthday">
+            
+              <b>birthday</b>()
+            
+            <a href="../../classes/StageBloc/User.html#method-i-birthday" name="method-i-birthday" class="permalink">Link</a>
+          </div>
+          
+          
+            <div class="description">
+              <p>Returns <code>birthday</code> as a <code>Time</code>.</p>
+            </div>
+          
+          
+          
+
+          
+          
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source: 
+                <a href="javascript:toggleSource('method-i-birthday_source')" id="l_method-i-birthday_source">show</a>
+                
+              </p>
+              <div id="method-i-birthday_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File lib/stagebloc/user.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">birthday</span>
+  <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">get_attribute</span>(<span class="ruby-value">:birthday</span>))
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+        
+        <div class="method">
+          <div class="title method-title" id="method-i-created">
+            
+              <b>created</b>()
+            
+            <a href="../../classes/StageBloc/User.html#method-i-created" name="method-i-created" class="permalink">Link</a>
+          </div>
+          
+          
+            <div class="description">
+              <p>Returns <code>created</code> as a <code>Time</code>.</p>
+            </div>
+          
+          
+          
+
+          
+          
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source: 
+                <a href="javascript:toggleSource('method-i-created_source')" id="l_method-i-created_source">show</a>
+                
+              </p>
+              <div id="method-i-created_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File lib/stagebloc/user.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">created</span>
+  <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">get_attribute</span>(<span class="ruby-value">:created</span>))
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+        
+        <div class="method">
+          <div class="title method-title" id="method-i-photo">
+            
+              <b>photo</b>()
+            
+            <a href="../../classes/StageBloc/User.html#method-i-photo" name="method-i-photo" class="permalink">Link</a>
+          </div>
+          
+          
+            <div class="description">
+              <p>Formats the photo images hash.</p>
+<ul><li>
+<p><code>:thumbnail_url</code></p>
+</li><li>
+<p><code>:small_url</code></p>
+</li><li>
+<p><code>:medium_url</code></p>
+</li><li>
+<p><code>:large_url</code></p>
+</li><li>
+<p><code>:original_url</code></p>
+
+<pre><code>user.photo[:large_url] #=&gt; &quot;http://stagebloc.dev/large-image.jpg&quot;
+</code></pre>
+</li></ul>
+            </div>
+          
+          
+          
+
+          
+          
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source: 
+                <a href="javascript:toggleSource('method-i-photo_source')" id="l_method-i-photo_source">show</a>
+                
+              </p>
+              <div id="method-i-photo_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File lib/stagebloc/user.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword ruby-title">photo</span>
+  <span class="ruby-identifier">user_photos</span> = <span class="ruby-identifier">get_attribute</span>(<span class="ruby-value">:photo</span>)
+  <span class="ruby-keyword">return</span> {} <span class="ruby-keyword">if</span> <span class="ruby-identifier">user_photos</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-identifier">images</span> = <span class="ruby-identifier">user_photos</span>[<span class="ruby-string">&#39;images&#39;</span>]
+  {
+    <span class="ruby-identifier">thumbnail_url</span><span class="ruby-operator">:</span>   <span class="ruby-identifier">images</span>[<span class="ruby-string">&#39;thumbnail_url&#39;</span>],
+    <span class="ruby-identifier">small_url</span><span class="ruby-operator">:</span>       <span class="ruby-identifier">images</span>[<span class="ruby-string">&#39;small_url&#39;</span>],
+    <span class="ruby-identifier">medium_url</span><span class="ruby-operator">:</span>      <span class="ruby-identifier">images</span>[<span class="ruby-string">&#39;medium_url&#39;</span>],
+    <span class="ruby-identifier">large_url</span><span class="ruby-operator">:</span>       <span class="ruby-identifier">images</span>[<span class="ruby-string">&#39;large_url&#39;</span>],
+    <span class="ruby-identifier">original_url</span><span class="ruby-operator">:</span>    <span class="ruby-identifier">images</span>[<span class="ruby-string">&#39;original_url&#39;</span>],
+  }
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+                    </div>
+
+    </div>
+  </body>
+</html>    
