@@ -3,7 +3,7 @@
 The StageBloc gem is an API wrapper to push/receive data for an
 authenticated user.
 
-[![Build Status](https://travis-ci.org/TheCodeDeli/stagebloc-ruby.svg?branch=master)](https://travis-ci.org/TheCodeDeli/stagebloc-ruby)
+[![Build Status](https://travis-ci.org/TheCodeDeli/stagebloc-ruby.svg?branch=master)](https://travis-ci.org/TheCodeDeli/stagebloc-ruby) [![Coverage Status](https://img.shields.io/coveralls/TheCodeDeli/stagebloc-ruby.svg)](https://coveralls.io/r/TheCodeDeli/stagebloc-ruby?branch=master)
 
 For authentication via OAuth check out our [OmniAuth Strategy for
 Stagebloc][omniauth-stagebloc].
