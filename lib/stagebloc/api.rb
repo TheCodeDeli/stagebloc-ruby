@@ -1,5 +1,5 @@
 module StageBloc
-  class API
+  class API # :nodoc:
     include HTTParty
     base_uri 'https://api.stagebloc.com/v1'
   end
