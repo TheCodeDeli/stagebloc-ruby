@@ -2,3 +2,4 @@ language: ruby
 rvm:
   - 2.1.1
   - 2.0.0
+env: STAGEBLOC_CLIENT_ID=stagebloc-client-id STAGEBLOC_CLIENT_SECRET=stagebloc-client-secret
