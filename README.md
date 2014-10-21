@@ -1,6 +1,6 @@
 # StageBloc - Ruby API Wrapper
 
-The StageBloc gem is an API wrapper to give push/receive data for an
+The StageBloc gem is an API wrapper to push/receive data for an
 authenticated user.
 
 For authentication via OAuth check out our [OmniAuth Strategy for
