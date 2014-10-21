@@ -3,6 +3,9 @@
 The StageBloc gem is an API wrapper to give push/receive data for an
 authenticated user.
 
+For authentication via OAuth check out our [OmniAuth Strategy for
+Stagebloc][omniauth-stagebloc].
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -30,3 +33,5 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[omniauth-stagebloc]: https://github.com/TheCodeDeli/omniauth-stagebloc
