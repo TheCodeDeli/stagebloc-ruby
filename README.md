@@ -8,7 +8,7 @@ authenticated user.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'stage_bloc'
+gem 'stagebloc'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install stage_bloc
+    $ gem install stagebloc
 
 ## Usage
 

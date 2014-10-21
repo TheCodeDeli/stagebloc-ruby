@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'stage_bloc/version'
+require 'stagebloc/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "stage_bloc"
+  spec.name          = "stagebloc"
   spec.version       = StageBloc::VERSION
   spec.authors       = ["Baylor Rae'"]
   spec.email         = ["opensource@thecodedeli.com"]

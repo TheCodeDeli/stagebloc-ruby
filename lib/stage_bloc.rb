@@ -1,4 +1,4 @@
-require "stage_bloc/version"
+require "stagebloc/version"
 
 module StageBloc
   # Your code goes here...
